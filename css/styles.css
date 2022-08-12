@@ -81,7 +81,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height:calc(100vh - 3rem);
+  height:calc(100vh);
   gap:20px;
   position:relative;
   width:100%;
@@ -91,7 +91,7 @@ button {
   text-align: center;
 }
 
-.home__name{
+.home__name {
   color: var(--title-color);
   font-size: var(--h1-font-size);
   line-height: 2.2rem;
@@ -100,7 +100,7 @@ button {
   display: inline-block;
 }
 
-.home__profession{
+.home__profession {
   color:var(--text-color);
   margin-bottom: 2.5rem;
   text-align: center;
@@ -108,38 +108,23 @@ button {
   justify-content: center;
 }
 
-/* Home Arrow */
-.down-arrow {
-	position: absolute;
-	top: 90%;
-	width: 3vmin;
-	height: 3vmin;
-	background: transparent;
-	border-top: 1vmin solid white;
-	border-right: 1vmin solid white;
-	box-shadow: 0 0 0 lightgray;
-	transition: all 500ms ease;
-	
-	left: calc(50% - 1.5vmin);
-	transform: translate3d(0,-50%,0) rotate(135deg);
+/* ========== About Me ========== */
+.about-all{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.down-arrow:hover {
-  border-color: var(--text-color);
-  box-shadow: 0.5vmin -0.5vmin 0 white;
+.about-info {
+  margin:2.5rem 1rem 1rem 1rem;
+  text-align: justify;
 }
 
-.down-arrow::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-40%,-60%) rotate(45deg);
-  width: 200%;
-  height: 200%;
+.about-text {
+  position:relative;
+  text-align: justify;
+  color:var(--text-color);
+  font-size: 1.14rem;
+  font-weight: 400;
 }
-
-/* 
-  Referencias:
-  Home Arrow: https://codepen.io/varystrategic/pen/zGrMQK
-*/
