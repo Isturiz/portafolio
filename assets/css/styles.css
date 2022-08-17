@@ -1,19 +1,19 @@
 @font-face {
   /* Title */
   font-family: 'aachen_bold';
-  src: url('/assets/font/Aachen_Bold.ttf') format("truetype");
+  src: url('../font/Aachen_Bold.ttf') format("truetype");
 }
 
 @font-face {
   /* Sub Title */
   font-family: 'busoroma';
-  src: url('/assets/font/busorama.ttf') format("truetype");
+  src: url('../font/busorama.ttf') format("truetype");
 }
 
 @font-face {
   /* Text */
   font-family: 'benguiat';
-  src: url('/assets/font/ITC_Benguiat/BenguiatStd-Book.otf');
+  src: url('../font/ITC_Benguiat/BenguiatStd-Book.otf');
 }
 
 /* ========== Variables ========== */
