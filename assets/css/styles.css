@@ -161,7 +161,7 @@ button {
   align-items: center;
   justify-content: center;
   height:calc(100vh);
-  gap:20px;
+  gap:2rem;
   position:relative;
   width:100%;
 }
@@ -175,7 +175,6 @@ button {
 
   /* position */
   position: relative;
-  top: -30px;
 }
 
 .about-container {
@@ -195,7 +194,7 @@ button {
 
 .about-info {
   margin:2.5rem 1rem 1rem 1rem;
-  text-align: left;
+  text-align: center;
   
 }
 
@@ -264,6 +263,7 @@ button {
     font-size: 30%;
   }
 
+  /* ========== Home ========== */
   .home__name{
     font-size: 3.3rem;
     margin:2.5rem;
@@ -278,12 +278,17 @@ button {
 
   }
 
+  .about-img {
+    height: 25rem;
+    width: auto;
+  }
+
   .about-info {
     margin: 0;
     text-align: left;
   }
 
-
+  /* ========== Footer ========== */
   .footer-contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
