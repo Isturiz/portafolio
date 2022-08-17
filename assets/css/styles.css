@@ -1,23 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+@font-face {
+  /* Title */
+  font-family: 'aachen_bold';
+  src: url('/assets/font/Aachen_Bold.ttf') format("truetype");
+}
+
+@font-face {
+  /* Sub Title */
+  font-family: 'busoroma';
+  src: url('/assets/font/busorama.ttf') format("truetype");
+}
+
+@font-face {
+  /* Text */
+  font-family: 'benguiat';
+  src: url('/assets/font/ITC_Benguiat/BenguiatStd-Book.otf');
+}
 
 /* ========== Variables ========== */
 :root {
-  /* ========== Variables Light Theme ========== */
-  --second-color:#b16555; /* Green/Blue */
-  --first-color-alt: rgb(34, 145, 133);
-  --title-color: hsl(var(--hue), 12%, 15%); /*Títle h2*/
-  --text-color: hsl(260, 50%, 50%); 
-  --body-color: hsl(0, 0%, 0%); /*Bgr color*/
-  --container-color: rgb(248, 248, 248); /*Color Nav*/
-  --color-shadow-navDown: hsla(var(--hue), var(--sat), 15%, 0.15); /*Shadow NavDown*/
-  --background-home-img: linear-gradient(20deg, rgb(255, 255, 255) 35%, rgba(38,166,153,1) 86%);
+  font-size: 62.5%;
+  
+  /* Pulp Fiction Colors */
+  --cervine-color: #ffb100;
+  --reddish-color: #ea0102;
+  --black-background: #000000;
+
 
   /* ========== Font and Typography ========== */
-  --body-font: 'Share Tech Mono', monospace;
-  --h1-font-size: 5.5rem;
-  --normal-font-size: 2.8rem;
-  --tiny-font-size: .675rem;
+  --title-font: 'aachen_bold';
+  --sub-title-font: 'busoroma';
+  --text-font: 'benguiat';
 
+  --title-font-size: 8.8rem;
+  --title-text-font-size: 4.4rem;
+
+  --sub-title-font-size: 7.2rem;
+  --text-font-size: 2.8rem;
+  
   /* ========== z-index ========== */
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -29,7 +48,7 @@
   padding: 0;
   margin: 0;
   font-style: normal;
-  font-family: 'Share Tech Mono', monospace;
+
   
 }
 
@@ -40,10 +59,11 @@ html {
 
 body {
   /* margin: var(--header-height) 0 0 0; */
-  font-family: var(--body-font);
-  font-size: var(--normal-font-size);
-  background-color: var(--body-color);
-  color: var(--text-color);
+  font-family: var(--text-font);
+  background-color: var(--black-background);
+  color: var(--cervine-color);
+  letter-spacing: 0.1rem;
+
 }
 
 ul {
@@ -73,28 +93,24 @@ button {
 /*Scrollbar full body*/
 ::-webkit-scrollbar-track{
   /* box-shadow: inset 0 0 10px green; */
-  background-color: var(--body-color);
+  background-color: #ff00002b;
 }
 /*Scrollbar main line*/
 ::-webkit-scrollbar-thumb{
-  border-radius: 5px;
-  background-color: hsl(260, 80%, 10%);
+  border-radius: 2px;
+  background-color: #442f00;
 }
 /*Scrollbar main line hover & active*/
 ::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:active{
-  background-color: var(--text-color);
+  background-color: #ea0102;
 }
-
-
 
 /* ========== Home ========== */  
 .home-all {
-  /* attributes */
+  /* position */
   height:calc(100vh);
-  width:100%;
-  
-  /* flex */
+  width:100%;  
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -103,32 +119,43 @@ button {
   position:relative;
 }
 
-.home-data {
-  text-align: center;
-}
+.home-name {
+  /* style */
+  font-size: var(--title-font-size);
+  font-family: "aachen_bold";
+  font-weight: 100;
+  
+  color:var(--cervine-color);
+  text-shadow: 0px 0.5rem 0px var(--reddish-color);
 
-.home__name {
-  color: var(--title-color);
-  font-size: var(--h1-font-size);
-  line-height: 2.2rem;
+  /* position */
   margin:1rem;
-  color:var(--title-color);
-  display: inline-block;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .home__profession {
-  color:var(--text-color);
-  margin-bottom: 2.5rem;
-  text-align: center;
+  /* style */
+  color:var(--cervine-color);
+  font-family: 'busoroma';
+  font-size: var(--title-text-font-size);
+
+
+  /* position */
   display: flex;
+  text-align: center;
   justify-content: center;
+  margin-bottom: 2.5rem;
 }
 
 /* ========== About Me ========== */
 .about {
-  background-color: hsl(260, 80%, 10%);
+  background-color: hsl(260, 80%, 10%); /* Morado anterior */
+  /* background-color: var(--black-background); */
 }
 .about-all{
+  /* position */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,18 +166,29 @@ button {
   width:100%;
 }
 
+.about-all h2 {
+  /* style */
+  font-family: var(--title-font);
+  color: var(--cervine-color);
+  font-weight: 100;
+  font-size: var(--sub-title-font-size);
+
+  /* position */
+  position: relative;
+  top: -30px;
+}
+
 .about-container {
+  /* postion */
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-
   padding: 0 15vw; /* hacer con padding y vw*/
-
-
 }
 
 .about-img {
+  /* position */
   width:400px;
   justify-self: center;
 }
@@ -158,21 +196,25 @@ button {
 .about-info {
   margin:2.5rem 1rem 1rem 1rem;
   text-align: left;
+  
 }
 
 .about-text {
   position:relative;
   text-align: justify;
-  color:var(--text-color);
+  color:var(--cervine-color);
   font-size: 1.14rem;
   font-weight: 400;
+  font-size: var(--text-font-size);
+
 }
 
 
 /* ========== Footer ========== */
 .footer {
-  background-color: hsla(260, 80%, 10%, 0.46);
-  
+  /* Color anterior */
+  /* background-color: hsla(260, 80%, 10%, 0.46); */
+  background-color: var(--black-background);
 }
 .footer-all {
   display: flex;
@@ -218,6 +260,10 @@ button {
 
 /* ----- Phone: Normal Decives ----- */
 @media screen and (max-width: 481px) {
+  :root {
+    font-size: 30%;
+  }
+
   .home__name{
     font-size: 3.3rem;
     margin:2.5rem;
