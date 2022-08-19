@@ -33,12 +33,13 @@ textarea {
   border: solid 1rem #ffb100;
   margin: 2rem auto;
   position: relative;
-  width: 50vw;
+  width: 70vw;
+  padding-top: 1.5rem;
 }
 
 .contact-me h2 {
   color: #ffb100;
-  font-size: 32px;
+  font-size: var(--title-text-font-size);
   font-weight: 700;
   letter-spacing: 7px;
   text-align: center;
@@ -47,27 +48,27 @@ textarea {
 
 .underline {
   border-bottom: solid 0.2rem #ffb100;
-  margin: 0rem auto;
+  margin: 1rem auto;
   width: 8rem;
 }
 
 .icon_wrapper {
-  margin: 50px auto 0;
+  margin: 3rem auto 0;
   width: 100%;
 }
 
 .icon {
   display: block;
   fill: #ffb100;
-  height: 50px;
+  height: 5rem;
   margin: 0 auto;
-  width: 50px;
+  width: 5rem;
 }
 
 
 .contact-me form {
   padding: 3.75rem;
-  margin: 4rem 0;
+  margin: 0rem 0;
 }
 
 
@@ -140,9 +141,14 @@ textarea {
 	color: #ffb100;
 }
 
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
 #form_button {
   background: none;
-  border: solid 2px #ffb100;
+  border: solid 0.2rem #ffb100;
   color: #ffb100;
   cursor: pointer;
   display: inline-block;
@@ -150,7 +156,7 @@ textarea {
   font-size: 1.5rem;
   font-weight: bold;
   outline: none;
-  padding: 20px 35px;
+  padding: 2rem 3.5rem;
   text-transform: uppercase;
   -webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;

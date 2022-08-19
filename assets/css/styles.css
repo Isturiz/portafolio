@@ -167,6 +167,8 @@ button {
   position:relative;
   height:calc(100vh);
   width:100%;
+  padding: 0 15vw; /* hacer con padding y vw*/
+
 }
 
 .about-all h2 {
@@ -184,7 +186,6 @@ button {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  padding: 0 15vw; /* hacer con padding y vw*/
 }
 
 .about-img {
@@ -206,31 +207,81 @@ button {
   font-weight: 400;
   font-size: var(--text-font-size);
 }
+/* ========== Skills ========== */
+.skills {
 
-/* ========== Contact Me ========== */
-.contact-me {
- /*  background-color: hsl(106, 94%, 19%); */ /* Morado anterior */
-  background-color: var(--black-background);
 }
-.contact-me-all{
-  /* position */
-  display: grid;
+
+.skills-all {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   position:relative;
-  
   height:calc(100vh);
   width:100%;
-  padding: 0 15vw;
+  padding: 0 15vw; /* hacer con padding y vw*/
 
 }
 
+.skills-all h2 {
+  /* style */
+  font-family: var(--title-font);
+  color: var(--cervine-color);
+  font-weight: 100;
+  font-size: var(--sub-title-font-size);
+}
 
-/* Form */
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+}
 
+.skills-info {
+  margin:2.5rem 1rem 1rem 1rem;
+  text-align: center;
+}
 
+.skills-text {
+  position:relative;
+  text-align: center;
+  color:var(--cervine-color);
+  font-size: 1.14rem;
+  font-weight: 400;
+  font-size: var(--text-font-size);
+}
 
+.skills-group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 
+.skills-card {
+  display: flex;
+  align-items: center;
+
+}
+
+.skills-card h3 {
+  font-size: 2.8rem;
+}
+
+/* ========== Contact Me ========== */
+.contact{
+ /*  background-color: hsl(106, 94%, 19%); */ /* Morado anterior */
+  background-color: var(--black-background);
+}
+
+.contact-all{
+  /* position */
+  height:calc(100vh);
+  width:100%;
+  padding: 0 15vw; /* hacer con padding y vw*/
+  display: flex;
+  align-items: center;
+}
 
 /* ========== Footer ========== */
 .footer {
@@ -244,14 +295,15 @@ button {
   align-items: center;
   justify-content: center;
   padding: 3rem;
+  height: 40vh;
 }
 
-.footer-name {
-  font-size: 2rem;
+.footer-all h2{
+  font-size: var(--title-text-font-size);
 }
 
-.footer p {
-  font-size: 1.5rem;
+.footer-all p {
+  font-size: var(--text-font-size);
 }
 
 .footer-contact {
@@ -267,6 +319,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.footer-contact-link a {
+  font-size: 2rem;
 }
 
 .footer-contact-link a:visited {
