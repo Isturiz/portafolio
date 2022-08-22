@@ -173,6 +173,8 @@ button {
 
 .about-all h2 {
   /* style */
+  position: absolute;
+  top: 0;
   font-family: var(--title-font);
   color: var(--cervine-color);
   font-weight: 100;
@@ -190,7 +192,7 @@ button {
 
 .about-img {
   /* position */
-  width:400px;
+  width: 100%;
   justify-self: center;
 }
 
@@ -225,6 +227,8 @@ button {
 }
 
 .skills-all h2 {
+  position: absolute;
+  top: 0;
   /* style */
   font-family: var(--title-font);
   color: var(--cervine-color);
