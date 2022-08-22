@@ -141,7 +141,7 @@ textarea {
 	color: #ffb100;
 }
 
-.submit {
+.submit-div {
   display: flex;
   justify-content: center;
 }

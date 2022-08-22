@@ -57,15 +57,6 @@
       <div class="skills-all">
         <h2>Habilidades</h2>
         <div class="skills-container">
-
-          <div class="skills-info">
-            <div class="skills-text">
-              La mayoría de las habilidades técnicas obtenidas ha
-              sido mediante plataformas de aprendizaje online como 
-              Platzi, FreeCodeCamp, Cisco y por supuesto, Youtube. 
-            </div>
-          </div>
-
           <div class="skills-group">
 
             <div class="skills-card">
@@ -132,7 +123,7 @@
     </section>
 
     <!-- ========== Contact Me ========= -->
-    <section class="contact-me">
+    <section class="contact-me" id="contact-me">
       <div class="contact-all">
         <div class="contact-container">
           <h2>&bull; CONTÁCTAME &bull;</h2>
@@ -144,22 +135,25 @@
             <path d="M70.865,101.78c0,4.774,3.886,8.657,8.66,8.657c4.774,0,8.657-3.883,8.657-8.657c0-4.773-3.883-8.656-8.657-8.656    C74.751,93.124,70.865,97.006,70.865,101.78z"></path>
           </svg>
         </div>
-        <form action="" name="contact" id="contact_form" netlify>
+        <form action="javascript: return false" name="contact" id="contact_form" netlify>
           <div class="name">
             <label for="name"></label>
-            <input type="text" placeholder="Nombre" name="name" id="name_input" required>
+            <input value="Nombre test" type="text" placeholder="Nombre" name="name" id="name_input" required>
           </div>
           <div class="email">
             <label for="email"></label>
-            <input type="email" placeholder="Correo electrónico" name="email" id="email_input" required>
+            <input value="correo@e.com" type="email" placeholder="Correo electrónico" name="email" id="email_input" required>
           </div>
 
           <div class="message">
             <label for="message"></label>
-            <textarea name="message" placeholder="Mensaje" id="message_input" cols="30" rows="5" required></textarea>
+            <textarea name="message" placeholder="Mensaje" id="message_input" cols="30" rows="5" required>mensaje test</textarea>
           </div>
-          <div class="submit">
-            <input type="submit" value="Enviar" id="form_button" />
+          <div class="submit-div">
+            <input
+              type="submit"
+              value="Enviar"
+              id="form_button"/>
           </div>
         </form><!-- // End form -->
         </div><!-- // End #container -->
@@ -213,8 +207,13 @@
     </div>
   </footer>
 
-  
-  <!-- ========== SweetAlert ========== -->
-  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <!-- Externos -->
+  <!-- ========== SweetAlert2 ========== -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  <!-- Internos -->
+  <!-- ========== mail.js ========== -->
+  <script src="assets/js/mail.js"></script>
+
 </body>
 </html>
