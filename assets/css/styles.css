@@ -24,9 +24,9 @@
   font-size: 62.5%;
   
   /* Pulp Fiction Colors */
-  --cervine-color: #ffb100;
-  --reddish-color: #ea0102;
-  --black-background: #000000;
+  --primary-color: #ffb100;
+  --secundary-color: #ea0102;
+  --background-color: #000000;
 
 
   /* ========== Font and Typography ========== */
@@ -51,8 +51,6 @@
   padding: 0;
   margin: 0;
   font-style: normal;
-
-  
 }
 
 html {
@@ -63,8 +61,8 @@ html {
 body {
   /* margin: var(--header-height) 0 0 0; */
   font-family: var(--text-font);
-  background-color: var(--black-background);
-  color: var(--cervine-color);
+  background-color: var(--background-color);
+  color: var(--primary-color);
   letter-spacing: 0.1rem;
 
 }
@@ -108,6 +106,51 @@ button {
 ::-webkit-scrollbar-thumb:active{
   background-color: #ea0102;
 }
+/* ========== Home ========== */  
+.header {
+  background-color: #FFFEFC;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10%;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  height: 7rem;
+}
+
+.nav-logo {
+  font-size: 4rem;
+  color: #ea0102;
+}
+
+.nav-logo:hover {
+  transition: all 0.2s;
+  transform: scale(1.2);
+}
+
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link {
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.4rem;
+  color: var(--secundary-color);
+  font-weight: 400;
+}
+
 
 /* ========== Home ========== */  
 .home-all {
@@ -128,8 +171,8 @@ button {
   font-family: "aachen_bold";
   font-weight: 100;
   
-  color:var(--cervine-color);
-  text-shadow: 0px .8rem 0px var(--reddish-color);
+  color:var(--primary-color);
+  text-shadow: 0px .8rem 0px var(--secundary-color);
 
   /* position */
   margin:1rem;
@@ -140,7 +183,7 @@ button {
 
 .home__profession {
   /* style */
-  color:var(--cervine-color);
+  color:var(--primary-color);
   font-family: 'busoroma';
   font-size: var(--title-text-font-size);
 
@@ -154,8 +197,7 @@ button {
 
 /* ========== About Me ========== */
 .about {
-  background-color: hsl(260, 80%, 10%); /* Morado anterior */
-  background-color: var(--black-background);
+  background-color: var(--background-color);
 }
 .about-all{
   /* position */
@@ -167,7 +209,7 @@ button {
   position:relative;
   height:calc(100vh);
   width:100%;
-  padding: 0 15vw; /* hacer con padding y vw*/
+  padding: 0 15vw;
 
 }
 
@@ -176,7 +218,7 @@ button {
   position: absolute;
   top: 0;
   font-family: var(--title-font);
-  color: var(--cervine-color);
+  color: var(--primary-color);
   font-weight: 100;
   font-size: var(--sub-title-font-size);
 
@@ -204,7 +246,7 @@ button {
 .about-text {
   position:relative;
   text-align: justify;
-  color:var(--cervine-color);
+  color:var(--primary-color);
   font-size: 1.14rem;
   font-weight: 400;
   font-size: var(--text-font-size);
@@ -231,7 +273,7 @@ button {
   top: 0;
   /* style */
   font-family: var(--title-font);
-  color: var(--cervine-color);
+  color: var(--primary-color);
   font-weight: 100;
   font-size: var(--sub-title-font-size);
 }
@@ -251,7 +293,7 @@ button {
 .skills-text {
   position:relative;
   text-align: center;
-  color:var(--cervine-color);
+  color:var(--primary-color);
   font-size: 1.14rem;
   font-weight: 400;
   font-size: var(--text-font-size);
@@ -259,7 +301,8 @@ button {
 
 .skills-group {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
 }
 
 .skills-card {
@@ -275,7 +318,7 @@ button {
 /* ========== Contact Me ========== */
 .contact{
  /*  background-color: hsl(106, 94%, 19%); */ /* Morado anterior */
-  background-color: var(--black-background);
+  background-color: var(--background-color);
 }
 
 .contact-all{
@@ -299,7 +342,7 @@ button {
 .footer {
   /* Color anterior */
   /* background-color: hsla(260, 80%, 10%, 0.46); */
-  background-color: var(--black-background);
+  background-color: var(--background-color);
 }
 .footer-all {
   display: flex;
@@ -363,7 +406,7 @@ button {
   /* ========== About Me ========== */
   .about-all {
     height: auto;
-    background-color: var(--black-background);
+    background-color: var(--background-color);
   }
 
   .about-container {
