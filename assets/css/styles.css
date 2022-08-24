@@ -28,6 +28,9 @@
   --secundary-color: #ea0102;
   --background-color: #000000;
 
+  /* Beta Colors */
+  --c:#282c34;
+
 
   /* ========== Font and Typography ========== */
   --title-font: 'aachen_bold';
@@ -44,6 +47,14 @@
   --z-tooltip: 10;
   --z-fixed: 100;
 }
+
+/* ========== Darkmode ========== */
+body.darkmode {
+  --primary-color: #000000;
+  --secundary-color: #6b0808;
+  --background-color: #fcfcfc;
+}
+
 
 /* ========== Globals ========== */
 * {
@@ -124,12 +135,14 @@ button {
   justify-content: space-between;
   align-items: center;
   width: auto;
-  height: 7rem;
+  height: 6rem;
 }
 
 .nav-logo {
-  font-size: 4rem;
-  color: #ea0102;
+  font-family: var(--title-font);
+  font-size: 3em;
+  color: var(--primary-color);
+  
 }
 
 .nav-logo:hover {
@@ -141,6 +154,8 @@ button {
 .nav-list {
   display: flex;
   justify-content: space-around;
+  column-gap: 6rem;
+  font-size: 2rem;
 }
 
 .nav-link {
@@ -151,7 +166,19 @@ button {
   font-weight: 400;
 }
 
+.theme-lang {
+  display: flex;
+  column-gap: 2rem;
+  font-size: 2rem;
+}
 
+.theme-wrap button{
+  color: var(--secundary-color);
+}
+
+.lang-wrap a{
+  color: var(--secundary-color);
+}
 /* ========== Home ========== */  
 .home-all {
   /* position */
