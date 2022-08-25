@@ -95,6 +95,7 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+  background-color: transparent;
 }
 
 /* ========== SCROLLBAR ========== */
@@ -172,9 +173,6 @@ button {
   font-size: 2rem;
 }
 
-.theme-wrap button{
-  color: var(--secundary-color);
-}
 
 .lang-wrap a{
   color: var(--secundary-color);
