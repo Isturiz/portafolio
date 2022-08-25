@@ -15,7 +15,7 @@ button{
 }
 
 button, input, textarea {
-  color: #ffb100;
+  color: var(--primary-color);
   font: inherit;
   margin: 0;
 }
@@ -30,7 +30,7 @@ textarea {
 
 
 .contact-container {
-  border: solid 1rem #ffb100;
+  border: solid 1rem var(--primary-color);
   margin: 2rem auto;
   position: relative;
   width: 70vw;
@@ -38,7 +38,7 @@ textarea {
 }
 
 .contact-me h2 {
-  color: #ffb100;
+  color: var(--primary-color);
   font-size: var(--title-text-font-size);
   font-weight: 700;
   letter-spacing: 7px;
@@ -47,7 +47,7 @@ textarea {
 }
 
 .underline {
-  border-bottom: solid 0.2rem #ffb100;
+  border-bottom: solid 0.2rem var(--primary-color);
   margin: 1rem auto;
   width: 8rem;
 }
@@ -59,7 +59,7 @@ textarea {
 
 .icon {
   display: block;
-  fill: #ffb100;
+  fill: var(--primary-color);
   height: 5rem;
   margin: 0 auto;
   width: 5rem;
@@ -80,8 +80,8 @@ textarea {
 input[type='text'], [type='email'], textarea {
 	background: none;
   border: none;
-	border-bottom: solid 2px #ffb100;
-	color: #ffb100;
+	border-bottom: solid 2px var(--primary-color);
+	color: var(--primary-color);
 	font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 1px;
@@ -124,21 +124,21 @@ textarea {
 }
 
 ::-webkit-input-placeholder {
-	color: #ffb100;
+	color: var(--primary-color);
 }
 
 :-moz-placeholder { 
-	color: #ffb100;
+	color: var(--primary-color);
 	opacity: 1;
 }
 
 ::-moz-placeholder {
-	color: #ffb100;
+	color: var(--primary-color);
 	opacity: 1;
 }
 
 :-ms-input-placeholder {
-	color: #ffb100;
+	color: var(--primary-color);
 }
 
 .submit-div {
@@ -148,8 +148,8 @@ textarea {
 
 #form_button {
   background: none;
-  border: solid 0.2rem #ffb100;
-  color: #ffb100;
+  border: solid 0.2rem var(--primary-color);
+  color: var(--primary-color);
   cursor: pointer;
   display: inline-block;
   font-family: 'Helvetica', Arial, sans-serif;
@@ -167,7 +167,7 @@ textarea {
 
 #form_button:hover {
   background: var(--reddish-color);
-  color: #ffb100;
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 768px) {

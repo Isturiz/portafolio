@@ -70,9 +70,9 @@
             <button id="bdark">Modo oscuro</button>
           </div>
 
-          <div class="lang-wrap">
-            <a href="#" class="a-lang">ES</a>
-            <a href="#" class="a-lang">EN</a>
+          <div class="lang-wrap" id="btn-lang">
+            <button data-language="es">ES</button>
+            <button data-language="en">EN</button>
           </div>
 
         </div>
@@ -87,7 +87,9 @@
           
           <!-- Home Text -->
           <h1 class="home-name">MAURICIO ISTÚRIZ</h1>
-          <span class="home__profession">Desarrollador de Software</span>
+          <span class="home__profession" data-section="profile" data-value="rol">
+            Desarrollador de Software
+          </span>
         </div>
 
         
@@ -203,16 +205,16 @@
         <form action="#contact_form" name="contact" id="contact_form" data-netlify="true">
           <div class="name">
             <label for="name"></label>
-            <input type="text" placeholder="Nombre" name="name" id="name_input" required>
+            <input type="text" placeholder="Quentin Tarantino" name="name" id="name_input" required>
           </div>
           <div class="email">
             <label for="email"></label>
-            <input type="email" placeholder="Correo electrónico" name="email" id="email_input" required>
+            <input type="email" placeholder="pulpfiction@email.com" name="email" id="email_input" required>
           </div>
 
           <div class="message">
             <label for="message"></label>
-            <textarea name="message" placeholder="Mensaje" id="message_input" cols="30" rows="5" required></textarea>
+            <textarea name="message" placeholder="¿No te encanta cuando vuelves del baño y encuentras tu comida esperándote?" id="message_input" cols="30" rows="5" required></textarea>
           </div>
           <div class="submit-div">
             <input
@@ -275,14 +277,19 @@
   <!-- Externos -->
   <!-- ========== SweetAlert2 ========== -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- ========== JQuery ========== -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
 
   <!-- Internos -->
-  <!-- ========== mail.js ========== -->
+  <!-- ========== mail ========== -->
   <script src="assets/js/mail.js"></script>
-
-
-  <!-- ========== changeTheme.js ========== -->
+  <!-- ========== change theme ========== -->
   <script src="assets/js/changeTheme.js"></script>
+  <!-- ========== change language ========== -->
+  <script src="assets/js/changeLanguage.js"></script>
+
   
 </body>
 </html>
