@@ -1,5 +1,21 @@
 {
+  "nav": {
+    "home": "Home",
+    "about": "About me",
+    "skills": "Skills",
+    "contact": "Contact"
+  },
+
   "profile": {
     "rol": "Software Developer"
+  },
+
+  "about": {
+    "title": "About me",
+    "text": "I am currently in my 4th semester of Computer Science. Throughout the learning process I have wandered between different programming languages such as C, C++, Java and Python, however, I am currently focused on everything related to web development, which naturally means HTML, CSS and JavaScript."
+  },
+
+  "skills": {
+    "title": "Skills"
   }
 }

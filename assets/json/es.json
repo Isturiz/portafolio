@@ -1,5 +1,21 @@
 {
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Habilidades",
+    "contact": "Contacto"
+  },
+
   "profile": {
     "rol": "Desarrollador de Software"
+  },
+
+  "about": {
+    "title": "Sobre mí",
+    "text": "En este momento me encuentro cursando 4to semestre de informática. A lo largo de todo el proceso de aprendizaje he divagado entre distintos lenguajes de programación como C, C++, Java y Python, sin embargo, actualmente estoy enfocado con todo lo relacionado al desarrollo web, que naturalmente significa HTML, CSS y JavaScript."
+  },
+
+  "skills": {
+    "title": "Habilidades"
   }
 }

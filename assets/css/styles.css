@@ -105,17 +105,17 @@ button {
 /*Scrollbar full body*/
 ::-webkit-scrollbar-track{
   /* box-shadow: inset 0 0 10px green; */
-  background-color: #ff00002b;
+  background-color: var(--background-color);
 }
 /*Scrollbar main line*/
 ::-webkit-scrollbar-thumb{
   border-radius: 2px;
-  background-color: #442f00;
+  background-color: var(--secundary-color);
 }
 /*Scrollbar main line hover & active*/
 ::-webkit-scrollbar-thumb:hover,
 ::-webkit-scrollbar-thumb:active{
-  background-color: #ea0102;
+  background-color: var(--primary-color);
 }
 /* ========== Home ========== */  
 .header {
