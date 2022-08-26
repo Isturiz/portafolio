@@ -62,14 +62,14 @@ body.lightMode {
   --primary-color: #000000;
   --secundary-color: #6b0808;
   --background-color: #fcfcfc;
-  --navbar-color: #e1ebff;
+  --navbar-color: #f9f9f9;
 
 }
 
 body.darkMode {
   --primary-color: #4a0759;
   --secundary-color: #bf63a3;
-  --background-color: #000000;
+  --background-color: #f5bee4;
   --navbar-color: #f9b2e2;
 
 }
