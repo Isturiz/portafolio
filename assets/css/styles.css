@@ -27,6 +27,7 @@
   --primary-color: #ffb100;
   --secundary-color: #ea0102;
   --background-color: #000000;
+  --navbar-color: #282c34;
 
   /* Beta Colors */
   --c:#282c34;
@@ -49,12 +50,29 @@
 }
 
 /* ========== Darkmode ========== */
-body.darkmode {
+body.pulpfictionMode {
+  --primary-color: #ffb100;
+  --secundary-color: #ea0102;
+  --background-color: #000000;
+  --navbar-color: #070707;
+
+}
+
+body.lightMode {
   --primary-color: #000000;
   --secundary-color: #6b0808;
   --background-color: #fcfcfc;
+  --navbar-color: #e1ebff;
+
 }
 
+body.darkMode {
+  --primary-color: #4a0759;
+  --secundary-color: #bf63a3;
+  --background-color: #000000;
+  --navbar-color: #f9b2e2;
+
+}
 
 /* ========== Globals ========== */
 * {
@@ -120,7 +138,7 @@ button {
 }
 /* ========== Home ========== */  
 .header {
-  background-color: #FFFEFC;
+  background-color: var(--navbar-color);
   position: fixed;
   top: 0;
   width: 100%;
@@ -163,7 +181,7 @@ button {
   flex-direction: column;
   align-items: center;
   row-gap: 0.4rem;
-  color: var(--secundary-color);
+  color: var(--primary-color);
   font-weight: 400;
 }
 

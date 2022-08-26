@@ -1,26 +1,33 @@
-const bdark = document.querySelector('#bdark')
+const btnTheme = document.querySelector('#btn-theme')
 const body = document.querySelector('body')
+let i = 1
+const themes = ["pulpfictionMode","lightMode", "darkMode"]
 
 load();
 
-bdark.addEventListener ('click', e => {
-  body.classList.toggle('darkmode')
-  store(body.classList.contains('darkmode'))
+btnTheme.addEventListener ('click', e => {
+  
+  body.classList.remove(body.classList[0])
+  body.classList.add(themes[i])
+  store(body.classList[0])
+  
+  i = i + 1
+  if (i === themes.length) { i = 0}
 });
 
 function load() {
 
-  const darkmode = localStorage.getItem('darkmode')
+  const theme = localStorage.getItem('theme')
 
-  if (!darkmode) {
-    store('false')
-  } else if (darkmode === 'true'){
-    body.classList.add('darkmode')
+  if (!theme) {
+    store(themes[i])
+  } else {
+    body.classList.add(theme)
   }
 }
 
 function store(value) {
 
-  localStorage.setItem('darkmode', value)
+  localStorage.setItem('theme', value)
 
 }
