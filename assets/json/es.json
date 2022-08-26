@@ -17,5 +17,13 @@
 
   "skills": {
     "title": "Habilidades"
+  },
+
+  "contact": {
+    "title": "Contáctame"
+  },
+
+  "footer": {
+    "title": "Contacto"
   }
 }

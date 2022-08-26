@@ -17,5 +17,13 @@
 
   "skills": {
     "title": "Skills"
+  },
+
+  "contact": {
+    "title": "Contact me"
+  },
+
+  "footer": {
+    "title": "Contact"
   }
 }
