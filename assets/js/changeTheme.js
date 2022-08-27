@@ -1,6 +1,5 @@
 const btnTheme = document.querySelector('#btn-theme')
 const body = document.querySelector('body')
-let i = 0
 const themes = ["pulpfictionMode","lightMode", "roseMode"]
 
 //localStorage.setItem('theme', 'lightMode')
