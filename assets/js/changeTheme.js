@@ -1,18 +1,35 @@
 const btnTheme = document.querySelector('#btn-theme')
 const body = document.querySelector('body')
-let i = 1
-const themes = ["pulpfictionMode","lightMode", "darkMode"]
+let i = 0
+const themes = ["pulpfictionMode","lightMode", "roseMode"]
 
+//localStorage.setItem('theme', 'lightMode')
 load();
 
 btnTheme.addEventListener ('click', e => {
   
-  body.classList.remove(body.classList[0])
-  body.classList.add(themes[i])
-  store(body.classList[0])
+  if (body.classList[0] === themes[i]) {
+    body.classList.remove(body.classList[0])
+    body.classList.add(themes[i + 1])
+    localStorage.setItem('theme', themes[i + 1])
+    i = i + 2
+    if (i >= themes.length) { i = 0}
+    localStorage.setItem('index', i)
+
+  }else {
+    body.classList.remove(body.classList[0])
+    body.classList.add(themes[i])
+    
+    localStorage.setItem('theme', themes[i])
+    i = i + 1
+    if (i >= themes.length) { i = 0}
+    localStorage.setItem('index', i)
+
+  }
+
+  //store(themes[i])
   
-  i = i + 1
-  if (i === themes.length) { i = 0}
+  
 });
 
 function load() {
@@ -20,7 +37,7 @@ function load() {
   const theme = localStorage.getItem('theme')
 
   if (!theme) {
-    store(themes[i])
+    store('lightMode')
   } else {
     body.classList.add(theme)
   }
@@ -29,5 +46,4 @@ function load() {
 function store(value) {
 
   localStorage.setItem('theme', value)
-
 }

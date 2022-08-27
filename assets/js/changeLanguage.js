@@ -1,10 +1,8 @@
 const btnLang = document.getElementById('btn-lang');
 const textsToChange = document.querySelectorAll('[data-section]');
-const languages = ['es', 'en']
 
 const changeLanguage = async language => {
-  
-  const requestJson = await fetch(`./assets/json/${language}.json`);
+  const requestJson = await fetch(`assets/json/${language}.json`);
   const texts = await requestJson.json();
   
   for (const textToChange of textsToChange) {
