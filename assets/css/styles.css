@@ -41,6 +41,10 @@
   --sub-title-font-size: 7.2rem;
   --text-font-size: 2.8rem;
   
+
+  /* Others Variable */
+  --margin-top-title: 10rem;
+
   /* ========== z-index ========== */
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -91,7 +95,6 @@ body {
   background-color: var(--background-color);
   color: var(--primary-color);
   letter-spacing: 0.1rem;
-
 }
 
 ul {
@@ -251,7 +254,7 @@ button {
   height:calc(100vh);
   width:100%;
   padding: 0 15vw;
-
+  
 }
 
 .about-all h2 {
@@ -262,6 +265,7 @@ button {
   color: var(--primary-color);
   font-weight: 100;
   font-size: var(--sub-title-font-size);
+  margin-top: var(--margin-top-title);
 
 }
 
@@ -317,6 +321,7 @@ button {
   color: var(--primary-color);
   font-weight: 100;
   font-size: var(--sub-title-font-size);
+  margin-top: var(--margin-top-title);
 }
 
 .skills-container {
@@ -342,8 +347,11 @@ button {
 
 .skills-group {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem 5rem;
+  background-color: var(--background-variation--color);
+  border-radius: 1rem;
+  padding: 2rem 2rem;
 }
 
 .skills-card {
