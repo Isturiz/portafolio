@@ -3,7 +3,7 @@
     "home": "Inicio",
     "about": "Sobre mí",
     "skills": "Habilidades",
-    "proyects": "Proyectos",
+    "projects": "Proyectos",
     "contact": "Contacto"
   },
 
@@ -20,7 +20,7 @@
     "title": "Habilidades"
   },
 
-  "proyects": {
+  "projects": {
     "title": "Proyectos"
   },
 
@@ -29,6 +29,6 @@
   },
 
   "footer": {
-    "title": "Contacto"
+    "title": "Contacto:"
   }
 }

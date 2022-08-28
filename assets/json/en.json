@@ -3,7 +3,7 @@
     "home": "Home",
     "about": "About me",
     "skills": "Skills",
-    "proyects": "Proyects",
+    "projects": "Projects",
     "contact": "Contact"
   },
 
@@ -25,6 +25,6 @@
   },
 
   "footer": {
-    "title": "Contact"
+    "title": "Contact:"
   }
 }
