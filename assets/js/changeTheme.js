@@ -2,7 +2,6 @@ const btnTheme = document.querySelector('#btn-theme')
 const body = document.querySelector('body')
 const themes = ["pulpfictionMode","lightMode", "roseMode"]
 
-//localStorage.setItem('theme', 'lightMode')
 
 let index = 0;
 load();
@@ -25,17 +24,14 @@ function load() {
   console.log(theme);
 
   if (!theme) {
-    store('lightMode')
-    index = 2
+    index = 1
+    localStorage.setItem('theme', 'lightMode')
+    body.classList.add(themes[index])
+    index++
+
   } else {
     index = parseInt(localStorage.getItem('index'), 10)
     body.classList.add(theme)
+
   }
-
-
-}
-
-function store(value) {
-
-  localStorage.setItem('theme', value)
 }
