@@ -176,7 +176,7 @@ button {
 .nav-list {
   display: flex;
   justify-content: space-around;
-  column-gap: 6rem;
+  column-gap: 3rem;
   font-size: 2rem;
 }
 
@@ -556,7 +556,15 @@ button {
   }
 }
 
+.separator-top{
+  width: 100%;
+  position: relative;
+  top: -15rem;
 
-.test {
-  fill: var(--secundary-color);
+}
+
+.separator-bot{
+  width: 100%;
+  position: relative;
+  top: 15rem;
 }

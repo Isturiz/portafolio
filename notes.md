@@ -22,3 +22,6 @@
   negro: https://paletton.com/#uid=13A0u0k004o0jir01bR5h02di0p
   negro-2: https://paletton.com/#uid=13A0u0k00g500++00pK0N4zn+8X
 */
+
+
+Hacer los separators planos por un lado
