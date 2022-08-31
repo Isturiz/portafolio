@@ -24,9 +24,9 @@
   font-size: 62.5%;
   
   /* Pulp Fiction Colors */
-  --primary-color: #ffb100;
+  --primary-color: #000000;
   --secundary-color: #ea0102;
-  --background-color: #000000;
+  --background-color: #ffffff;
   --background-variation--color: #070707;
 
 
@@ -63,8 +63,15 @@ body.pulpfictionMode {
 body.lightMode {
   --primary-color: #000000;
   --secundary-color: #6b0808;
-  --background-color: #fcfcfc;
+  --background-color: #ffffff;
   --background-variation--color: #f9f9f9;
+  --background-colosr: rgb(24 24 27/var(--tw-bg-opacity));
+
+  --primary-color: #000000;
+  --secundary-color: #ffffff;
+
+  --primary-background-color: #ffffff;
+  --secundary-background-color: #000000;
 
 }
 
@@ -139,8 +146,8 @@ button {
 }
 /* ========== Home ========== */  
 .header {
-  background-color: var(--background-variation--color);
-  position: fixed;
+  background-color: var(--primary-background-color);
+  position: absolute;
   top: 0;
   width: 100%;
   z-index: 10;
@@ -217,11 +224,16 @@ button {
     z-index: 20; 
   }
 
+  .nav-list {
+    gap: 0;
+    font-size: 1rem;
+  }
+
 }
 /* ========== Home ========== */  
 .home-all {
   /* position */
-  height:calc(100vh);
+  height:100vh;
   width:100%;  
   display: flex;
   flex-direction: column;
@@ -263,7 +275,8 @@ button {
 
 /* ========== About Me ========== */
 .about {
-  background-color: var(--background-color);
+  background-color: var(--secundary-background-color);
+  color: var(--secundary-color);
 }
 .about-all {
   /* position */
@@ -284,7 +297,6 @@ button {
   position: absolute;
   top: 0;
   font-family: var(--title-font);
-  color: var(--primary-color);
   font-weight: 100;
   font-size: var(--sub-title-font-size);
   margin-top: var(--margin-top-title);
@@ -313,7 +325,6 @@ button {
 .about-text {
   position:relative;
   text-align: justify;
-  color:var(--primary-color);
   font-size: 1.14rem;
   font-weight: 400;
   font-size: var(--text-font-size);
@@ -387,7 +398,7 @@ button {
 }
 /* ========== Projects ========== */
 .projects {
-
+  background-color: var(--secundary-background-color);
 }
 
 .projects-all {
@@ -407,7 +418,7 @@ button {
   position: absolute;
   top: 0;
   font-family: var(--title-font);
-  color: var(--primary-color);
+  color: var(--secundary-color);
   font-weight: 100;
   font-size: var(--sub-title-font-size);
   margin-top: var(--margin-top-title);
@@ -440,7 +451,8 @@ button {
 .footer {
   /* Color anterior */
   /* background-color: hsla(260, 80%, 10%, 0.46); */
-  background-color: var(--background-variation--color);
+  background-color: var(--secundary-background-color);
+  color: var(--secundary-color);
 }
 .footer-all {
   display: flex;
@@ -465,7 +477,7 @@ button {
 }
 
 .footer-contact-link {
-  color:var(--title-color);
+  color:var(--secundary-color);
   padding:.9rem;
   font-size: 1rem;
 
@@ -478,11 +490,11 @@ button {
 }
 
 .footer-contact-link a:visited {
-  color:var(--title-color);
+  color:var(--secundary-color);
 }
 
 .footer-contact-link a:link {
-  color:var(--title-color);
+  color:var(--secundary-color);
 }
 
 /* ========== Media Queries ========== */
@@ -534,4 +546,17 @@ button {
 /* ----- Phone: Small Decives ----- */
 @media screen and (max-width: 320px) {
 
+}
+
+
+@media screen and (min-width: 767px) {
+
+  .nav-link i {
+    display: none;
+  }
+}
+
+
+.test {
+  fill: var(--secundary-color);
 }
