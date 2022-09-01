@@ -23,11 +23,12 @@
 :root {
   font-size: 62.5%;
   
-  /* Pulp Fiction Colors */
+  /* Light Theme Colors */
   --primary-color: #000000;
-  --secundary-color: #ea0102;
-  --background-color: #ffffff;
-  --background-variation--color: #070707;
+  --secundary-color: #ffffff;
+
+  --primary-background-color: #ffffff;
+  --secundary-background-color: #000000;
 
 
   /* ========== Font and Typography ========== */
@@ -61,12 +62,6 @@ body.pulpfictionMode {
 }
 
 body.lightMode {
-  --primary-color: #000000;
-  --secundary-color: #6b0808;
-  --background-color: #ffffff;
-  --background-variation--color: #f9f9f9;
-  --background-colosr: rgb(24 24 27/var(--tw-bg-opacity));
-
   --primary-color: #000000;
   --secundary-color: #ffffff;
 
