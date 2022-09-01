@@ -51,15 +51,6 @@
   --z-fixed: 100;
 }
 
-/* ========== Darkmode ========== */
-body.pulpfictionMode {
-  --primary-color: #ffb100;
-  --secundary-color: #ea0102;
-  --background-color: #000000;
-  --background-variation--color: #070707;
-
-
-}
 
 body.lightMode {
   --primary-color: #000000;
@@ -73,7 +64,8 @@ body.lightMode {
 body.roseMode {
   --primary-color: #4a0759;
   --secundary-color: #bf63a3;
-  --background-color: #f5bee4;
+
+  --primary-background-color: #f5bee4;
   --background-variation--color: #f9b2e2;
 
 }
@@ -94,7 +86,7 @@ html {
 body {
   /* margin: var(--header-height) 0 0 0; */
   font-family: var(--text-font);
-  background-color: var(--background-color);
+  background-color: var(--primary-background-color);
   color: var(--primary-color);
   letter-spacing: 0.1rem;
 }
@@ -122,23 +114,18 @@ button {
 /* ========== SCROLLBAR ========== */
 /*General width*/
 ::-webkit-scrollbar{
-  width:10px;  
+  width: 10px;  
 }
 /*Scrollbar full body*/
 ::-webkit-scrollbar-track{
-  /* box-shadow: inset 0 0 10px green; */
-  background-color: var(--background-variation--color);
+  background-color: var(--secundary-background-color);
 }
 /*Scrollbar main line*/
 ::-webkit-scrollbar-thumb{
   border-radius: 2px;
-  background-color: var(--primary-color);
-}
-/*Scrollbar main line hover & active*/
-::-webkit-scrollbar-thumb:hover,
-::-webkit-scrollbar-thumb:active{
   background-color: var(--secundary-color);
 }
+
 /* ========== Home ========== */  
 .header {
   background-color: var(--primary-background-color);
@@ -377,7 +364,7 @@ button {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem 5rem;
-  background-color: var(--background-variation--color);
+  background-color: var(--secundary-background-color);
   border-radius: 1rem;
   padding: 2rem 2rem;
 }
@@ -385,12 +372,18 @@ button {
 .skills-card {
   display: flex;
   align-items: center;
+  color: white;
 
 }
 
 .skills-card h3 {
   font-size: 2.8rem;
 }
+
+.skills-card path {
+  width: 100px;
+}
+
 /* ========== Projects ========== */
 .projects {
   background-color: var(--secundary-background-color);
@@ -422,7 +415,7 @@ button {
 /* ========== Contact Me ========== */
 .contact{
  /*  background-color: hsl(106, 94%, 19%); */ /* Morado anterior */
-  background-color: var(--background-color);
+  background-color: var(--primary-background-color);
 }
 
 .contact-all{
@@ -550,12 +543,6 @@ button {
   }
 }
 
-.separator-top{
-  width: 100%;
-  position: relative;
-  top: -15rem;
-
-}
 
 .separator{
   width: 100%;
@@ -564,4 +551,9 @@ button {
 
 .sep-up {
   top: 1rem;
+}
+
+.sep-down {
+  margin-top: -5px;
+  z-index: -1;
 }

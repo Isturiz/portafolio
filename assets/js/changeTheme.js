@@ -1,6 +1,6 @@
 const btnTheme = document.querySelector('#btn-theme')
 const body = document.querySelector('body')
-const themes = ["pulpfictionMode","lightMode", "roseMode"]
+const themes = ["lightMode", "roseMode"]
 
 
 let index = 0;
