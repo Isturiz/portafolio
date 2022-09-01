@@ -52,22 +52,13 @@
 }
 
 
-body.lightMode {
-  --primary-color: #000000;
+
+body.darkmode {
+  --primary-color: #ffffff;
   --secundary-color: #ffffff;
 
-  --primary-background-color: #ffffff;
-  --secundary-background-color: #000000;
-
-}
-
-body.roseMode {
-  --primary-color: #4a0759;
-  --secundary-color: #bf63a3;
-
-  --primary-background-color: #f5bee4;
-  --background-variation--color: #f9b2e2;
-
+  --primary-background-color: #000000;
+  --secundary-background-color: #18181b;
 }
 
 /* ========== Globals ========== */
@@ -81,6 +72,7 @@ body.roseMode {
 html {
   scroll-behavior: smooth;
   transition: all 200ms;
+  
 }
 
 body {
@@ -89,6 +81,8 @@ body {
   background-color: var(--primary-background-color);
   color: var(--primary-color);
   letter-spacing: 0.1rem;
+  transition: 0.2s linear;
+
 }
 
 ul {
@@ -126,6 +120,21 @@ button {
   background-color: var(--secundary-color);
 }
 
+/* ========== Separator ========== */  
+.separator{
+  width: 100%;
+  position: relative;
+}
+
+.sep-up {
+  top: 1rem;
+}
+
+.sep-down {
+  margin-top: -5px;
+  z-index: -1;
+}
+
 /* ========== Home ========== */  
 .header {
   background-color: var(--primary-background-color);
@@ -145,6 +154,7 @@ button {
   align-items: center;
   width: auto;
   height: 6rem;
+
 }
 
 .nav-logo {
@@ -187,28 +197,13 @@ button {
 
 
 @media screen and (max-width: 767px) {
-  .header
-  {
-    position:static;
-  }
-
+  
   .nav-menu {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: var(--primary-background-color);
-    width: 100%;
-    height: 5rem;
-    padding: 0 1rem;
-    display: grid;
-    align-content: center;
-
-    z-index: 20; 
+    gap: 0;
   }
 
   .nav-list {
-    gap: 0;
-    font-size: 1rem;
+    column-gap: 0rem;
   }
 
 }
@@ -232,8 +227,8 @@ button {
   font-weight: 100;
   
   color:var(--primary-color);
-  text-shadow: 0px .8rem 0px var(--secundary-color);
-
+/*   text-shadow: 0px .8rem 0px var(--secundary-color);
+ */
   /* position */
   margin:1rem;
   display: flex;
@@ -544,16 +539,3 @@ button {
 }
 
 
-.separator{
-  width: 100%;
-  position: relative;
-}
-
-.sep-up {
-  top: 1rem;
-}
-
-.sep-down {
-  margin-top: -5px;
-  z-index: -1;
-}
