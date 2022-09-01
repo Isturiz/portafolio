@@ -516,7 +516,6 @@ button {
   /* ========== About Me ========== */
   .about-all {
     height: auto;
-    background-color: var(--background-color);
   }
 
   .about-container {
@@ -563,8 +562,11 @@ button {
 
 }
 
-.separator-bot{
+.separator{
   width: 100%;
   position: relative;
-  top: 15rem;
+}
+
+.sep-up {
+  top: 1rem;
 }
