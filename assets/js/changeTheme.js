@@ -9,7 +9,6 @@ btnTheme.addEventListener ('click', e => {
   /* 
   store(body.classList.contains('darkmode'))
    */
-  
   if (body.classList.contains('darkmode')) {
     localStorage.setItem('darkmode', 'true')
   } else {
@@ -24,11 +23,8 @@ function load() {
 
   if (darkmode === 'false') {
     store('false')
-    console.log('!darkmode')
-
 
   } else if (darkmode === 'true'){
-    console.log('darkmode')
     body.classList.add('darkmode')
   }
 }
