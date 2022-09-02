@@ -139,6 +139,8 @@ button {
 /* ESTO ES UNA PRUEBA */
 .burger-menu {
   display: none;
+  background-color: transparent;
+
 }
 
 .header {
@@ -538,38 +540,36 @@ button {
 
 @media screen and (max-width: 767px) {
   .nav-menu {
-    height: 100vh;
+    height: 20vh;
     position: fixed;
     flex-direction: column;
     justify-content: center;
-    width: 50%;
+    width: 30%;
     transition: all 1s;
     margin-left: -100%;
+    top: 10rem;
   }
 
   .nav-list {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .nav-item {
-      margin-right: 0;
-      margin-top: 1em;
+    margin-right: 0;
+    margin-top: 1em;
   }
 
   .burger-menu {
-      display: block;
+    display: block;
   }
 
-  .menu_show {
-      margin-left: 0;
+  .menu-show {
+    margin-left: 0;
+    background-color: red;
   }
 }
 
-
+/* Ocultar la X del burger menu */
 .icon_none {
   display: none;
-}
-
-.menu_show {
-  margin-left: 0;
 }

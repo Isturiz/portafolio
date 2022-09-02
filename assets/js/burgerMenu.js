@@ -3,23 +3,23 @@ const close = document.querySelector('#close')
 
 const burgerMenu = document.querySelector('#burger-menu'); 
 const links = document.querySelectorAll('.nav-link')
-const nav = document.querySelector('#nav-container')
+const navMenu = document.querySelector('#nav-menu')
 
 links.forEach((Element) => {
   Element.addEventListener('click', () => {
     toggleButtons();
+    openOrClose("", "icon_none");
   });
 });
 
 burgerMenu.addEventListener("click", () => {
   toggleButtons();
   openOrClose("", "icon_none");
-  console.log('work');
 });
 
 
 function toggleButtons() {
-  nav.classList.toggle('menu-show')
+  navMenu.classList.toggle('menu-show')
 }
 
 //nameClassBtn, clases que debe de tener en el value
