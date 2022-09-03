@@ -492,21 +492,29 @@ button {
 
 /* ========== Media Queries ========== */
 
+/* My querie: 1440 x 900 */
+@media screen and (max-width: 1679px) {
 
-/* ----- Phone: Normal Decives ----- */
-@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 1365px) {
   :root {
-    font-size: 30%;
+    font-size: 50%;
+  } 
+}
+
+@media screen and (max-width: 1023px) {
+  :root {
+    font-size: 50%;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  :root {
+    font-size: 37.5%;
   }
 
-  /* ========== Home ========== */
-  .home__name{
-    font-size: 3.3rem;
-    margin:2.5rem;
-    
-  }
-
-  /* ========== About Me ========== */
   .about-container {
     padding: 0 10vw;
     grid-template-columns: 1fr;
@@ -515,32 +523,19 @@ button {
   }
 
   .about-img {
-    height: 25rem;
-    width: auto;
-  }
-
-  .about-info {
-    margin: 0;
-  }
-
-  /* ========== Footer ========== */
-  .footer-contact {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    width: 70%;
   }
 }
 
-/* ----- Phone: Small Decives ----- */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 567px) {
+  :root {
+    font-size: 30%;
+  }
 
 }
 
 
-@media screen and (min-width: 767px) {
-
-}
-
+/* Burger Menu */
 @media screen and (max-width: 767px) {
   .nav-menu {
     height: 20vh;

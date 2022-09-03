@@ -1,6 +1,7 @@
 **To do:**
 
-1. Realizar las media queries
+1. Realizar las media queries:
+  -Van de mayor a menor
 
 
 
