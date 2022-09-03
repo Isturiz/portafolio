@@ -4,6 +4,7 @@ const close = document.querySelector('#close')
 const burgerMenu = document.querySelector('#burger-menu'); 
 const links = document.querySelectorAll('.nav-link')
 const navMenu = document.querySelector('#nav-menu')
+const testTheme = document.querySelector('#testTheme')
 
 links.forEach((Element) => {
   Element.addEventListener('click', () => {
@@ -20,6 +21,7 @@ burgerMenu.addEventListener("click", () => {
 
 function toggleButtons() {
   navMenu.classList.toggle('menu-show')
+  testTheme.classList.toggle('menu-show')
 }
 
 //nameClassBtn, clases que debe de tener en el value

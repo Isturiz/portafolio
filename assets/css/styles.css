@@ -140,7 +140,10 @@ button {
 .burger-menu {
   display: none;
   background-color: transparent;
+}
 
+.icon-burger {
+  width: 4rem;
 }
 
 .header {
@@ -544,10 +547,22 @@ button {
     position: fixed;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 30%;
     transition: all 1s;
     margin-left: -100%;
     top: 10rem;
+  }
+
+  .theme-lang {
+    height: 1vh;
+    position: fixed;
+    flex-direction: row;
+    justify-content: center;
+    width: 30%;
+    transition: all 1s;
+    margin-left: -100%;
+    top: 35rem;
   }
 
   .nav-list {
