@@ -509,7 +509,7 @@ button {
   }
 }
 
-/* Mobile */
+/* ⬇️⬇️⬇️⬇️⬇️ Mobile ⬇️⬇️⬇️⬇️⬇️ */
 @media screen and (max-width: 767px) {
   :root {
     font-size: 37.5%;
