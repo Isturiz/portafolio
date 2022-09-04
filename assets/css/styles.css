@@ -280,14 +280,9 @@ button {
 }
 
 .about-all h2 {
-  /* style */
-  position: absolute;
-  top: 0;
   font-family: var(--title-font);
   font-weight: 100;
   font-size: var(--sub-title-font-size);
-  margin-top: var(--margin-top-title);
-
 }
 
 .about-container {
@@ -322,8 +317,9 @@ button {
 }
 
 .skills-all {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 3fr;
   align-items: center;
   justify-content: center;
   position:relative;
@@ -334,14 +330,13 @@ button {
 }
 
 .skills-all h2 {
-  position: absolute;
-  top: 0;
-  /* style */
+  display: flex;
   font-family: var(--title-font);
   color: var(--primary-color);
   font-weight: 100;
   font-size: var(--sub-title-font-size);
-  margin-top: var(--margin-top-title);
+  justify-content: center;
+  padding-top: 10rem;
 }
 
 .skills-container {
@@ -349,20 +344,7 @@ button {
   grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
-}
-
-.skills-info {
-  margin:2.5rem 1rem 1rem 1rem;
-  text-align: center;
-}
-
-.skills-text {
-  position:relative;
-  text-align: center;
-  color:var(--primary-color);
-  font-size: 1.14rem;
-  font-weight: 400;
-  font-size: var(--text-font-size);
+  padding: 0 15vw;
 }
 
 .skills-group {
@@ -377,6 +359,7 @@ button {
 .skills-card {
   display: flex;
   align-items: center;
+  /* flex-direction: column; */
   color: white;
 
 }
@@ -515,8 +498,12 @@ button {
     font-size: 37.5%;
   }
 
-  .about-container {
+  .about-all {
     padding: 0 10vw;
+
+  }
+
+  .about-container {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
 
@@ -532,6 +519,9 @@ button {
     font-size: 30%;
   }
 
+  .skills-container {
+    padding: 0 10vw;
+  }
 }
 
 
