@@ -177,6 +177,9 @@ button {
   
 }
 
+.ocult {
+  display: none;
+}
 
 .nav-list {
   display: flex;
@@ -504,6 +507,10 @@ button {
 
   .menu__logo {
     font-size: 4;
+  }
+
+  .ocult {
+    display: block;
   }
 
   .icon-burger {

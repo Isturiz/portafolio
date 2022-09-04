@@ -1,4 +1,6 @@
 const btnLang = document.getElementById('btn-lang');
+const btnLang1 = document.getElementById('btn-lang1');
+
 const textsToChange = document.querySelectorAll('[data-section]');
 
 const changeLanguage = async language => {
@@ -15,6 +17,14 @@ const changeLanguage = async language => {
 load()
 
 btnLang.addEventListener('click', e => {
+  const language = e.target.dataset.language;
+  if (language) {
+    changeLanguage(language);
+    store(language)
+  }
+});
+
+btnLang1.addEventListener('click', e => {
   const language = e.target.dataset.language;
   if (language) {
     changeLanguage(language);
