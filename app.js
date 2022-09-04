@@ -2,16 +2,19 @@
 	const list = document.querySelector('.menu__links');
 	const menu = document.querySelector('.menu__hamburguer');
 
+	const link = document.querySelectorAll('.menu__link')
+
 
 	const open = document.querySelector('#open');
 	const close = document.querySelector('#close')
 
 
-	const addClick = ()=>{
-
-	}
-
-
+	link.forEach((Element) => {
+		Element.addEventListener('click', () => {
+			openOrClose("", "icon_none");
+			list.classList.toggle('menu__links--show');
+		});
+	});
 
 	menu.addEventListener('click', ()=> {
 		openOrClose("", 'icon_none');
