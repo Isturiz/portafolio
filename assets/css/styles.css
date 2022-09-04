@@ -25,6 +25,7 @@
   /* Light Theme Colors */
   --primary-color: #000000;
   --secundary-color: #ffffff;
+  --third-color: #747474;
 
   --primary-background-color: #ffffff;
   --secundary-background-color: #000000;
@@ -55,6 +56,8 @@
 body.darkmode {
   --primary-color: #ffffff;
   --secundary-color: #ffffff;
+  --third-color: #c4c4c4;
+
 
   --primary-background-color: #000000;
   --secundary-background-color: #18181b;
@@ -200,11 +203,9 @@ button {
   font-size: 2rem;
 }
 
-
-.lang-wrap a{
-  color: var(--secundary-color);
+.theme-lang button:hover {
+  color: var(--third-color);
 }
-
 
 @media screen and (max-width: 767px) {
   
@@ -329,7 +330,18 @@ button {
 
 }
 
-.skills-all h2 {
+
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  padding: 0 15vw;
+}
+
+.skills-container h2 {
   display: flex;
   font-family: var(--title-font);
   color: var(--primary-color);
@@ -337,14 +349,6 @@ button {
   font-size: var(--sub-title-font-size);
   justify-content: center;
   padding-top: 10rem;
-}
-
-.skills-container {
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-content: center;
-  padding: 0 15vw;
 }
 
 .skills-group {
@@ -519,9 +523,16 @@ button {
     font-size: 30%;
   }
 
-  .skills-container {
-    padding: 0 10vw;
+  .skills-container h2 {
+    padding: 0;
+    margin: 0;
   }
+
+  .skills-container {
+    grid-template-rows: 1fr 1.5fr;
+    padding: 0;
+  }
+
 }
 
 

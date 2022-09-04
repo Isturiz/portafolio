@@ -1,10 +1,10 @@
 /* NAV BAR TEST ALEX DESIGN */
 .menu{
-  background-color: white;
-  color: black;
-  height: 6rem;
+  background-color: var(--primary-background-color);
+  color: var(--primary-color);
+  height: 6.5rem;
 
-  font-size: 2rem;
+  font-size: 3rem;
 
 }
 
@@ -18,7 +18,8 @@
 }
 
 .menu__logo {
-  font-size: 3rem;
+  font-size: 4rem;
+  color: var(--primary-color);
 }
 
 /* Contenedor lista */
@@ -44,7 +45,7 @@
 
 /* Items del menú */ /* Me interesa */
 .menu__link{
-  color: rgb(0, 0, 0);
+  color: var(--primary-color);
   text-decoration: none;
   margin: 0 3rem;
   display: flex;
@@ -56,7 +57,7 @@
 
 /* Hover menú */
 .menu__link:hover{
-  color: rosybrown;
+  color: var(--third-color);
 }
 
 /* Contenedor icon */
@@ -93,7 +94,7 @@
       position: fixed;
       max-width: 400px;
       width: 100%;
-      top: 70px;
+      top: 6.5rem;
       bottom: 0;
       right: 0;
       background-color: #000000;
@@ -116,6 +117,7 @@
       width: 100%;
       justify-content: center;
       color: white;
+      font-size: 4rem;
   }
 
   .theme-wrap button, .lang-wrap button{
