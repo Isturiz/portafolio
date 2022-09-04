@@ -40,11 +40,12 @@ textarea {
 
 .contact-me h2 {
   color: var(--primary-color);
-  font-size: var(--title-text-font-size);
-  font-weight: 700;
-  letter-spacing: 7px;
+  font-family: var(--title-font);
   text-align: center;
-  text-transform: uppercase;
+
+
+  font-weight: 100;
+  font-size: var(--sub-title-font-size);
 }
 
 .underline {
