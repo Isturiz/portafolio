@@ -4,7 +4,6 @@ const close = document.querySelector('#close')
 const burgerMenu = document.querySelector('#burger-menu'); 
 const links = document.querySelectorAll('.nav-link')
 const navMenu = document.querySelector('#nav-menu')
-const testTheme = document.querySelector('#testTheme')
 
 links.forEach((Element) => {
   Element.addEventListener('click', () => {

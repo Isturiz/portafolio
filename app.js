@@ -1,29 +1,34 @@
 (function(){
-    const list = document.querySelector('.menu__links');
-    const menu = document.querySelector('.menu__hamburguer');
-
-    const addClick = ()=>{
-
-    }
-
-    window.addEventListener('resize', ()=>{
-        if(window.innerWidth > 800){
-            deleteStyleHeight();
-            if(list.classList.contains('menu__links--show'))
-                list.classList.remove('menu__links--show');
-
-        }else{
-            addClick();
-        }
-    });
-
-    if(window.innerWidth <= 800){
-        addClick();
-    }
-
-    menu.addEventListener('click', ()=> list.classList.toggle('menu__links--show'));
+	const list = document.querySelector('.menu__links');
+	const menu = document.querySelector('.menu__hamburguer');
 
 
+	const open = document.querySelector('#open');
+	const close = document.querySelector('#close')
+
+
+	const addClick = ()=>{
+
+	}
+
+
+
+	menu.addEventListener('click', ()=> {
+		openOrClose("", 'icon_none');
+		list.classList.toggle('menu__links--show');
+	});
+
+	function openOrClose(nameClassBtn, nameClassNone) {
+		//variable auxiliar encargada de guardar la clase para verificar si es un icono o el otro
+		const aux = open.classList.value;
+		if (aux === nameClassBtn) {
+				open.classList.add(nameClassNone);
+				close.classList.remove(nameClassNone);
+		} else {
+				open.classList.remove(nameClassNone);
+				close.classList.add(nameClassNone);
+		}
+	}
 
 })();
 
