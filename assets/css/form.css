@@ -28,14 +28,15 @@ textarea {
   overflow: auto;
 }
 
-
 .contact-container {
-  border: solid 1rem var(--primary-color);
+  /* border: solid 1rem var(--primary-color); */
+  border-radius: 1rem;
   margin: 2rem auto;
   position: relative;
   width: 70vw;
   padding-top: 1.5rem;
 }
+
 
 .contact-me h2 {
   color: var(--primary-color);
@@ -149,6 +150,7 @@ textarea {
 #form_button {
   background: none;
   border: solid 0.2rem var(--primary-color);
+  border-radius: 1rem;
   color: var(--primary-color);
   cursor: pointer;
   display: inline-block;
