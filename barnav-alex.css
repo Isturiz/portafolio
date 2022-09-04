@@ -4,8 +4,10 @@
   color: var(--primary-color);
   height: 6.5rem;
 
-  font-size: 3rem;
-
+  font-size: 2rem;
+  position: absolute;
+  width: 100%;
+  z-index: 500  ;
 }
 
 .menu__container{
@@ -18,8 +20,10 @@
 }
 
 .menu__logo {
-  font-size: 4rem;
+  font-size: 3rem;
   color: var(--primary-color);
+  font-family: var(--title-font);
+  font-weight: 100;
 }
 
 /* Contenedor lista */
@@ -77,6 +81,15 @@
 
 @media (max-width:800px){
 
+  .menu {
+    font-size: 3rem;
+    padding-top: 3rem;
+  }
+
+  .menu__logo {
+    font-size: 6rem;
+  }
+
   .menu__hamburguer{
     display: flex;
   }
@@ -94,7 +107,7 @@
       position: fixed;
       max-width: 400px;
       width: 100%;
-      top: 6.5rem;
+      top: 9rem;
       bottom: 0;
       right: 0;
       background-color: #000000;
