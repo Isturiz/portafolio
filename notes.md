@@ -2,6 +2,7 @@
 
 1. Realizar las media queries:
   -Van de mayor a menor
+  -Ajustar la imagen en mobile  
 
 
 

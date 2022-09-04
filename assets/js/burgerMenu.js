@@ -21,7 +21,6 @@ burgerMenu.addEventListener("click", () => {
 
 function toggleButtons() {
   navMenu.classList.toggle('menu-show')
-  testTheme.classList.toggle('menu-show')
 }
 
 //nameClassBtn, clases que debe de tener en el value

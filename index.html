@@ -28,6 +28,8 @@
   <!-- ========== CSS ========== -->
   <link rel="stylesheet" href="assets/css/styles.css">  
   <link rel="stylesheet" href="assets/css/form.css">
+  <link rel="stylesheet" href="barnav-alex.css">
+
 
 
   <!-- ========== Fontawesome ========== -->
@@ -37,84 +39,65 @@
 
   <main>
     <!-- ========== Header ========= -->
-    <header class="header">
-      <nav class="nav-container" id="nav-container">
+    <header class="">
+      <nav class="menu">
+        <section class="menu__container">
+            <h1 class="menu__logo">ITZ</h1>
 
-        <!-- Logo -->
-        <div>
-          <a href="#" class="nav-logo">ITZ</a>
-        </div>
+            <ul class="menu__links">
+                <li class="menu__item">
+                    <a href="#home" class="menu__link"><span class="nav-title" data-section="nav" data-value="home">Inicio</span></a>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="#about" class="menu__link"><span class="nav-title" data-section="nav" data-value="about">Sobre mí</span></a>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="#skills" class="menu__link"><span data-section="nav" data-value="skills">
+                      Habilidades
+                    </span></a>
+                </li>
+    
+                <li class="menu__item">
+                    <a href="#projects" class="menu__link"><span data-section="nav" data-value="projects">
+                      Proyectos
+                    </span></a>
+                </li>
 
-        <!-- Navbar -->
-        <div class="nav-menu" id="nav-menu">
-          <ul class="nav-list">
+                <li class="menu__item">
+                  <a href="#contact" class="menu__link">
+                    <span data-section="nav" data-value="contact">
+                      Contacto
+                    </span>
+                    </a>
+              </li>
+    
+              <div class="theme-wrap">
+      
+                <button id="btn-theme" >
+                  <i class="fa-solid fa-brush"></i>
+                </button>
+              </div>
+          
+              <div class="lang-wrap" id="btn-lang">
+                <button  data-language="es">ES</button>
+                <button data-language="en">EN</button>
+              </div>  
+            </ul>
 
-            <li class="nav-item">
-              <a href="#home" class="nav-link">
-                <span class="nav-title" data-section="nav" data-value="home">Inicio</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#about" class="nav-link">
-                <span class="nav-title" data-section="nav" data-value="about">Sobre mí</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#skills" class="nav-link">
-                <span class="nav-title" data-section="nav" data-value="skills">Habilidades</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#projects" class="nav-link">
-                <span class="nav-title" data-section="nav" data-value="projects">Proyectos</span>
-              </a>
-            </li>
-
-            <li class="nav-item">
-              <a href="#contact" class="nav-link">
-                <span class="nav-title" data-section="nav" data-value="contact">Contacto</span>
-              </a>
-            </li>
-
-          </ul>
-        </div>
-
-        <div class="burger-menu" id="burger-menu">
-          <button id="open">
-            <svg class="icon-burger" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            viewBox="0 0 50 50"
-            style=" fill:#000000;"><path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path></svg>
-          </button>
-
-          <button id="close" class="icon_none">
-            <svg class="icon-burger" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            viewBox="0 0 50 50"
-            style=" fill:#000000;"><path d="M 9.15625 6.3125 L 6.3125 9.15625 L 22.15625 25 L 6.21875 40.96875 L 9.03125 43.78125 L 25 27.84375 L 40.9375 43.78125 L 43.78125 40.9375 L 27.84375 25 L 43.6875 9.15625 L 40.84375 6.3125 L 25 22.15625 Z"></path></svg>
-          </button>
-        </div>
-
-        <!-- Theme and Language -->
-        <div class="theme-lang" id="testTheme">
-
-          <div class="theme-wrap">
             
-            <button id="btn-theme" >
-              <i class="fa-solid fa-brush"></i>
-            </button>
-          </div>
 
-          <div class="lang-wrap" id="btn-lang">
-            <button data-language="es">ES</button>
-            <button data-language="en">EN</button>
-          </div>
+            <div class="menu__hamburguer">
+                <img src="assets/img/menu.svg" class="menu__img">
+            </div>
+        </section>
 
-        </div>
-      </nav>
+      
+    </nav>
     </header>
 
+    
 
     <!-- ========== Home ========= -->
     <section class="home" id="home">
@@ -380,6 +363,7 @@
   <script src="assets/js/changeLanguage.js"></script>
   <!-- ========== change language ========== -->
   <script src="assets/js/burgerMenu.js"></script>
+  <script src="app.js"></script>
   
 </body>
 </html>
