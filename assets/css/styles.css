@@ -502,6 +502,14 @@ button {
     font-size: 37.5%;
   }
 
+  .menu__logo {
+    font-size: 4;
+  }
+
+  .icon-burger {
+    width: 8rem;
+  }
+
   .about-all {
     padding: 0 10vw;
 
@@ -521,6 +529,10 @@ button {
 @media screen and (max-width: 567px) {
   :root {
     font-size: 30%;
+  }
+
+  .icon-burger {
+    width: 5rem;
   }
 
   .skills-container h2 {
