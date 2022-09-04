@@ -113,7 +113,9 @@
 
   .menu__link{
       padding: 25px 0;
-      height: auto;
+      height: 100%;
+      width: 100%;
+      justify-content: center;
       color: white;
   }
 
