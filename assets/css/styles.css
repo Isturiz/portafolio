@@ -137,7 +137,7 @@ button {
   z-index: -1;
 }
 
-/* ========== Home ========== */ 
+/* ========== Nav ========== */ 
 
 .burger-menu {
   display: none;
@@ -292,6 +292,34 @@ button {
   margin-bottom: 2.5rem;
 }
 
+.home__buttons {
+  display: flex;
+  column-gap: 2rem;
+  justify-content: center;
+  font-size: var(--text-font-size);
+}
+
+.home__buttons a {
+  color: var(--primary-color);
+  border: 0.5rem solid var(--primary-color);
+  border-radius: 1rem;
+  /* 
+  height: 5rem;
+  width: 20rem;
+ */
+  padding: 1rem 2rem;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home__buttons a:hover {
+  color: var(--third-color);
+  border: 0.5rem solid var(--third-color);
+
+}
+
 /* ========== About Me ========== */
 .about {
   background-color: var(--secundary-background-color);
@@ -355,7 +383,7 @@ button {
   align-items: center;
   justify-content: center;
   position:relative;
-  height:calc(100vh);
+  height: 100vh;
   width:100%;
   padding: 0 15vw; /* hacer con padding y vw*/
 
@@ -561,26 +589,7 @@ button {
   }
 }
 
-@media screen and (max-width: 567px) {
-  :root {
-    font-size: 30%;
-  }
 
-  .icon-burger {
-    width: 5rem;
-  }
-
-  .skills-container h2 {
-    padding: 0;
-    margin: 0;
-  }
-
-  .skills-container {
-    grid-template-rows: 1fr 1.5fr;
-    padding: 0;
-  }
-
-}
 
 
 /* Burger Menu */
@@ -703,4 +712,23 @@ button {
   display: none;
 }
 
+@media screen and (max-width: 567px) {
+  :root {
+    font-size: 30%;
+  }
 
+  .icon-burger {
+    width: 5rem;
+  }
+
+  .skills-container h2 {
+    padding: 0;
+    margin: 0;
+  }
+
+  .skills-container {
+    grid-template-rows: 1fr 1.5fr;
+    padding: 0;
+  }
+
+}
