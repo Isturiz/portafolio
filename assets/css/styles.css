@@ -639,7 +639,7 @@ button {
   }
 }
 
-@media (max-width:800px){
+@media (max-width:767px){
 
   .menu {
     font-size: 3rem;
