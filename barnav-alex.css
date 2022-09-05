@@ -32,7 +32,9 @@
   transition: transform .5s;
   display: flex;
   align-items: center;
-}
+  column-gap: 3rem;
+
+  }
 
 /* Contenedor del item menu */
 .menu__item{ /* No me interesa */
