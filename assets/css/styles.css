@@ -333,7 +333,7 @@ button {
   justify-content: center;
   gap:2rem;
   position:relative;
-  height:calc(100vh);
+  height:100vh;
   width:100%;
   padding: 0 15vw;
   
@@ -379,7 +379,6 @@ button {
 .skills-all {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 3fr;
   align-items: center;
   justify-content: center;
   position:relative;
@@ -394,7 +393,7 @@ button {
 .skills-container {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 3fr;
   align-items: center;
   justify-content: center;
   padding: 0 15vw;
@@ -471,7 +470,7 @@ button {
 
 .contact-all{
   /* position */
-  height:calc(100vh);
+  height:100vh;
   width:100%;
   padding: 0 15vw; /* hacer con padding y vw*/
   display: flex;
@@ -650,6 +649,11 @@ button {
 
 @media (max-width:767px){
 
+  .brush-btn {
+    font-size: 5rem;
+  }
+
+  /* Menu */
   .menu {
     font-size: 3rem;
     padding-top: 3rem;
@@ -705,7 +709,58 @@ button {
   #btn-lang button{
     margin: 0 2rem;
   }
+
+  /* About */
+  .about {
+    padding: 5rem 0;
+  }
+
+  .about-all {
+    height: auto;
+  }
+
+  /* Skills */
+  .skills {
+    padding: 5rem 0;
+  }
+
+  .skills-all {
+    height: auto;
+  }
+
+  .skills-container h2 {
+    padding-top: 0;
+  }
+
+  /* Projects */
+  .projects {
+    padding: 5rem 0;
+  }
+
+  .projects-all {
+    height: auto;
+    min-height: 30vh;
+  }
+
+  .projects-all h2 {
+    margin-top: 0;
+  }
+
+  /* Contact */
+  .contact {
+    padding: 5rem 0;
+  }
+
+  .contact-all {
+    height: auto;
+    padding: 5rem 15vw;
+  }
+
+  .footer-all {
+    height: 20rem;
+  }
 }
+
 
 /* Ocultar la X del burger menu */
 .icon_none {
@@ -727,7 +782,7 @@ button {
   }
 
   .skills-container {
-    grid-template-rows: 1fr 1.5fr;
+    grid-template-rows: 1fr 3fr;
     padding: 0;
   }
 
